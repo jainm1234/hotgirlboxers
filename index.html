@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hot Girl Boxers — 100% cotton underwear that’s breathable, flattering, and made for your health.">
+  <title>Hot Girl Boxers – Underwear That Actually Feels Good</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0;">
+    <filter id="grain" x="0" y="0">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+    </filter>
+  </svg>
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" class="logo">HOT GIRL BOXERS</a>
+      <ul class="nav-links">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#details">Why Ours</a></li>
+        <li><a href="#about">Our Story</a></li>
+      </ul>
+      <button type="button" class="cart-btn" aria-label="Open cart">Cart 0</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="hero-image" role="img" aria-label="Hero"></div>
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>100% COTTON, BREATHABLE, NO PEE PEE FLAB, BUTT SEAM, PERFECT LENGTH, </span>
+          <span>100% COTTON, BREATHABLE, NO PEE PEE FLAB, BUTT SEAM, PERFECT LENGTH, </span>
+          <span>100% COTTON, BREATHABLE, NO PEE PEE FLAB, BUTT SEAM, PERFECT LENGTH, </span>
+          <span>100% COTTON, BREATHABLE, NO PEE PEE FLAB, BUTT SEAM, PERFECT LENGTH, </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="products" aria-labelledby="products-heading">
+      <div class="products-grain" aria-hidden="true"></div>
+      <div class="container">
+        <h2 id="products-heading" class="section-title">Meet the On the Go Girl Pack</h2>
+        <div class="product-grid product-grid--single">
+          <article class="product-card">
+            <div class="product-card__image">
+              <img src="test.png" alt="On the Go Girl Pack – Hot Girl Boxers" width="400" height="400">
+            </div>
+            <div class="product-card__body">
+              <p class="product-desc">1 Business Professional<br>1 Date Night<br>1 Urban Foraging</p>
+              <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="details" aria-labelledby="details-heading">
+      <div class="container">
+        <h2 id="details-heading" class="section-title">What makes us special</h2>
+        <ul class="details-list">
+          <li>100% cotton</li>
+          <li>No pee pee flab</li>
+          <li>Butt seam to show off that a**</li>
+          <li>Perfect length</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="container about-container">
+        <h2 id="about-heading" class="section-title">Our Story</h2>
+        <div class="about-content">
+          <p class="about-lead">I started Hot Girl Boxers because I was tired of getting UTIs and yeast infections.</p>
+          <p>Cheap synthetic underwear was  making me sick. I couldn’t find cotton boxers that were actually cut for my body, something that didn’t bunch, didn’t have a weird front pouch, and didn’t ride up. So I made them.</p>
+          <p>Our boxers are 100% cotton, breathable, and built with a flattering butt seam and the perfect length. No more infections. No more bad fits. Just underwear that feels as good as it looks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <h2 id="newsletter-heading" class="newsletter-title">Join the Girl Gang</h2>
+        <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <p class="footer-copy">&copy; <span id="year"></span> Hot Girl Boxers</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
